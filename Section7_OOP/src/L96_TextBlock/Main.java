@@ -25,17 +25,16 @@ public class Main {
 
         System.out.printf("Your age is %.2f%n", (float)age);
 
-        for(int i = 1; i <=100_000; i *= 10){
+        for(int i = 1; i <=100_000; i *= 10) {
             System.out.printf("Printing %d %n", i);
 
+
+//        String formattedString = String.format("Your age is %d", age);
+//        System.out.println(formattedString);
+
+            String formatttedString = "Your age is %d".formatted(age);
+            System.out.println(formatttedString);
         }
-
-//        String formatttedString = String.format("Your age is %d", age);
-//        System.out.println(formatttedString);
-
-        String formatttedString = "Your age is %d".formatted(age);
-        System.out.println(formatttedString);
-
 
     }
 
